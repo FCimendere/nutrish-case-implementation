@@ -1,0 +1,26 @@
+{
+  "name": "nutrish-case-implementation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^22.10.2",
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "puppeteer": "^23.11.0",
+    "ts-node": "^10.9.2",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/cheerio": "^0.22.35",
+    "@types/puppeteer": "^5.4.7",
+    "typescript": "^5.7.2"
+  }
+}
