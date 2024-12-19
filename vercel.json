@@ -8,8 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1.ts"
+      "src": "/api/scrape",
+      "dest": "/api/scrape.ts"
     }
   ],
   "env": {
