@@ -1,5 +1,6 @@
 <h1>Nutrish Case Implementation</h1>
 <p>A TypeScript-based web scraper that extracts supplement information from Examine.com. This tool uses Puppeteer for web scraping and provides structured data about various supplements, including their benefits, side effects, and scientific names.
+The output contains limited data as would occur in console JSON output.
 </p>
 
 <h2>Features</h2>
