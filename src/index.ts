@@ -1,3 +1,5 @@
+//test file out of vercel (without api version)
+
 import { ExamineScraper } from "./services/scraper.service";
 
 async function runScraper() {

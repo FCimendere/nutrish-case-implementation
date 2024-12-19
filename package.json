@@ -13,6 +13,7 @@
   "description": "",
   "dependencies": {
     "@types/node": "^22.10.2",
+    "@vercel/node": "^5.0.0",
     "axios": "^1.7.9",
     "cheerio": "^1.0.0",
     "puppeteer": "^23.11.0",
