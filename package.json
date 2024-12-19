@@ -1,14 +1,19 @@
 {
   "name": "nutrish-case-implementation",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
     "build": "tsc",
-    "scrape": "ts-node src/index.ts"
+    "scrape": "ts-node src/index.ts",
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
   },
   "keywords": [],
-  "author": "",
+  "author": "F Cimendere",
   "license": "ISC",
   "description": "",
   "dependencies": {
