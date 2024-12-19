@@ -8,14 +8,18 @@ const fetchSupplementData = async (query: string) => {
     );
   }
 
-  const apiUrl = process.env.SUPPLEMENT_API_URL.replace(
-    "https://https://",
-    "https://"
-  );
+  // const apiUrl = process.env.SUPPLEMENT_API_URL.replace(
+  //   "https://https://",
+  //   "https://"
+  // );
 
   try {
-    console.log(`Making request to: ${apiUrl}?query=${query}`);
-    const response = await axios.get(`${apiUrl}?query=${query}`);
+    console.log(
+      `Making request to: ${process.env.SUPPLEMENT_API_URL}?query=${query}`
+    );
+    const response = await axios.get(
+      `${process.env.SUPPLEMENT_API_URL}?query=${query}`
+    );
     return response.data;
   } catch (error) {
     console.error("API request failed:", error);
