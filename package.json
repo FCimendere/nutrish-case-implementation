@@ -12,7 +12,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@types/node": "^22.10.2",
     "@vercel/node": "^5.0.0",
     "axios": "^1.7.9",
     "cheerio": "^1.0.0",
@@ -24,7 +23,9 @@
   "devDependencies": {
     "@types/axios": "^0.9.36",
     "@types/cheerio": "^0.22.35",
+    "@types/node": "^22.10.2",
     "@types/puppeteer": "^5.4.7",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "vercel": "^39.2.2"
   }
 }

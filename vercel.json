@@ -2,14 +2,17 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/scrape.ts",
+      "src": "api/**/*.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/scrape",
-      "dest": "/api/scrape.ts"
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
 }

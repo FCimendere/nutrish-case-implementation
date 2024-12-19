@@ -3,6 +3,7 @@ import "dotenv/config";
 
 const fetchSupplementData = async (query: string) => {
   try {
+    console.log(`${process.env.SUPPLEMENT_API_URL}`);
     const response = await axios.get(
       `${process.env.SUPPLEMENT_API_URL}?query=${query}`
     );
