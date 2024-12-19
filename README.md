@@ -12,6 +12,10 @@ The output contains limited data as would occur in console JSON output.
 <li>Error handling and logging</li>
 </ol>
 
+<p>This project is working on <b>main</b> and <b>nutrish-scraper</b> branches for minimum requirements.</p>
+
+<p>The <b>nutrish-ai-chatbot</b> branch provides some additional steps for chatbot AI applications for preferred pequirements. Especially creating API via Vercel. However, this part is not fully completed.</p>
+
 <h2>Prerequisites</h2>
 <ul>
 <li>Node.js (LTS version recommended)</li>
@@ -115,8 +119,11 @@ npm run build
 </ul>
 
 <h1>Vercel API Integration Improvements</h1>
+
 <p>The project can scrape on Puppeteer and Typescript as a backend service. For better performance, the backend can be turned into an API endpoint via VERCEL as a Backend Project. The user can simply enter the word they want to search next to the Vercel link and perform a query query. The Vercel AI chatbot starter project at https://github.com/vercel/ai-chatbot can be run locally or deployed on Vercel. Then this API response can be sent to the Chatbot.
 </p>
+
+
 <h3>API Endpoint Structure</h3>
 <ul>
   <li>Convert to Vercel Serverless Functions</li>
