@@ -2,14 +2,25 @@ import axios from "axios";
 import "dotenv/config";
 
 const fetchSupplementData = async (query: string) => {
-  try {
-    console.log(`${process.env.SUPPLEMENT_API_URL}`);
-    const response = await axios.get(
-      `${process.env.SUPPLEMENT_API_URL}?query=${query}`
+  if (!process.env.SUPPLEMENT_API_URL) {
+    throw new Error(
+      "SUPPLEMENT_API_URL is not defined in environment variables"
     );
+  }
+
+  const apiUrl = process.env.SUPPLEMENT_API_URL.replace(
+    "https://https://",
+    "https://"
+  );
+
+  try {
+    console.log(`Making request to: ${apiUrl}?query=${query}`);
+    const response = await axios.get(`${apiUrl}?query=${query}`);
     return response.data;
   } catch (error) {
-    console.error("API request failed", error);
-    return null;
+    console.error("API request failed:", error);
+    throw error; // Hata yönetimi için hatayı yukarı fırlatıyoruz
   }
 };
+
+export default fetchSupplementData;
